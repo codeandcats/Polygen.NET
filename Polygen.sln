@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polygen", "Polygen\Polygen.csproj", "{79F07049-EFFB-4FA1-A762-F17BFB5ED31B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolygenLib", "PolygenLib\PolygenLib.csproj", "{340903EF-A374-4F14-9FC5-99645CD5B0F1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{4A054C92-771F-4A6C-B717-E7475C1927D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79F07049-EFFB-4FA1-A762-F17BFB5ED31B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79F07049-EFFB-4FA1-A762-F17BFB5ED31B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79F07049-EFFB-4FA1-A762-F17BFB5ED31B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79F07049-EFFB-4FA1-A762-F17BFB5ED31B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{340903EF-A374-4F14-9FC5-99645CD5B0F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{340903EF-A374-4F14-9FC5-99645CD5B0F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{340903EF-A374-4F14-9FC5-99645CD5B0F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{340903EF-A374-4F14-9FC5-99645CD5B0F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
