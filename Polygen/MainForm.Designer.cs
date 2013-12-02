@@ -48,13 +48,13 @@
 			this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
 			this.mnuEditSnapToHandles = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripSeparator();
+			this.mnuEditShadePolygons = new System.Windows.Forms.ToolStripMenuItem();
 			this.mnuUpdatePolygonColors = new System.Windows.Forms.ToolStripMenuItem();
 			this.mnuEditClearAllPolygons = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripSeparator();
 			this.mnuClampPointsToImage = new System.Windows.Forms.ToolStripMenuItem();
 			this.mnuView = new System.Windows.Forms.ToolStripMenuItem();
 			this.mnuViewShowOutlines = new System.Windows.Forms.ToolStripMenuItem();
-			this.mnuViewCheckerboard = new System.Windows.Forms.ToolStripMenuItem();
 			this.mnuViewFps = new System.Windows.Forms.ToolStripMenuItem();
 			this.mnuHelp = new System.Windows.Forms.ToolStripMenuItem();
 			this.mnuHelpAbout = new System.Windows.Forms.ToolStripMenuItem();
@@ -76,7 +76,6 @@
 			this.btnPolygonTool = new System.Windows.Forms.ToolStripButton();
 			this.btnEraseTool = new System.Windows.Forms.ToolStripButton();
 			this.canvas = new Polygen.UI.ImageCanvas();
-			this.mnuEditShadePolygons = new System.Windows.Forms.ToolStripMenuItem();
 			this.mnuMainMenu.SuspendLayout();
 			this.statusStrip1.SuspendLayout();
 			this.pnlTop.SuspendLayout();
@@ -244,6 +243,13 @@
 			this.toolStripMenuItem4.Name = "toolStripMenuItem4";
 			this.toolStripMenuItem4.Size = new System.Drawing.Size(321, 6);
 			// 
+			// mnuEditShadePolygons
+			// 
+			this.mnuEditShadePolygons.Name = "mnuEditShadePolygons";
+			this.mnuEditShadePolygons.Size = new System.Drawing.Size(324, 30);
+			this.mnuEditShadePolygons.Text = "S&hade Polygons";
+			this.mnuEditShadePolygons.Click += new System.EventHandler(this.mnuEditShadePolygons_Click);
+			// 
 			// mnuUpdatePolygonColors
 			// 
 			this.mnuUpdatePolygonColors.Name = "mnuUpdatePolygonColors";
@@ -274,7 +280,6 @@
 			// 
 			this.mnuView.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuViewShowOutlines,
-            this.mnuViewCheckerboard,
             this.mnuViewFps});
 			this.mnuView.Name = "mnuView";
 			this.mnuView.Size = new System.Drawing.Size(61, 29);
@@ -515,13 +520,6 @@
 			this.canvas.ChangesMade += new Polygen.UI.ChangesMadeEvent(this.canvas_ChangesMade);
 			this.canvas.MouseMove += new System.Windows.Forms.MouseEventHandler(this.canvas_MouseMove);
 			// 
-			// mnuEditShadePolygons
-			// 
-			this.mnuEditShadePolygons.Name = "mnuEditShadePolygons";
-			this.mnuEditShadePolygons.Size = new System.Drawing.Size(324, 30);
-			this.mnuEditShadePolygons.Text = "S&hade Polygons";
-			this.mnuEditShadePolygons.Click += new System.EventHandler(this.mnuEditShadePolygons_Click);
-			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -593,7 +591,6 @@
 		private System.Windows.Forms.ToolStripButton btnEraseTool;
 		private System.Windows.Forms.Button button1;
 		private UI.ImageCanvas canvas;
-		private System.Windows.Forms.ToolStripMenuItem mnuViewCheckerboard;
 		private System.Windows.Forms.Button button3;
 		private System.Windows.Forms.ToolStripSeparator toolStripMenuItem5;
 		private System.Windows.Forms.ToolStripMenuItem mnuClampPointsToImage;
