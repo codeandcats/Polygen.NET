@@ -135,6 +135,8 @@ namespace Polygen.Schema
 			}
 		}
 
+		public bool Shading { get; set; }
+
 		public void UpdatePolygonColor(Polygon polygon)
 		{
 			polygon.Color = GraphicsUtils.GetAverageColor(baseImage, polygon.Points.Select(p => p.Point));
@@ -158,7 +160,7 @@ namespace Polygen.Schema
 			}
 		}
 
-		private void UpdatePolygonPointColors(Polygon polygon)
+		internal void UpdatePolygonPointColors(Polygon polygon)
 		{
 			for (var currPointIndex = 0; currPointIndex < polygon.Points.Count; currPointIndex++)
 			{

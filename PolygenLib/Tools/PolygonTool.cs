@@ -500,6 +500,8 @@ namespace Polygen.Tools
 				{
 					string changeDescription = "";
 
+					var polygonsToUpdateColorsFor = new List<Polygon>();
+
 					try
 					{
 						var mouseDownImagePointRounded = mouseDownImagePoint.Round();
@@ -526,9 +528,12 @@ namespace Polygen.Tools
 											polygon.Color = GraphicsUtils.GetAverageColor(
 												Image.GetBaseImage(),
 												polygon.Points.Select(p => p.Point));
+
+											polygonsToUpdateColorsFor.Add(polygon);
 										}
 									}
 								}
+
 								changeDescription = "Resize polygon";
 								break;
 
@@ -551,6 +556,7 @@ namespace Polygen.Tools
 											Image.GetBaseImage(),
 											polygon.Points.Select(p => p.Point));
 										Image.Polygons.Add(polygon);
+										polygonsToUpdateColorsFor.Add(polygon);
 										changeDescription = "Add polygon";
 									}
 								}
@@ -617,6 +623,7 @@ namespace Polygen.Tools
 												Image.GetBaseImage(),
 												polygon.Points.Select(p => p.Point));
 											Image.Polygons.Add(polygon);
+											polygonsToUpdateColorsFor.Add(polygon);
 											changeDescription = "Add polygon";
 
 											firstPolygonClientPoints.Clear();
@@ -655,6 +662,8 @@ namespace Polygen.Tools
 											Image.GetBaseImage(),
 											newPolygon.Points.Select(p => p.Point));
 										Image.Polygons.Add(newPolygon);
+
+										polygonsToUpdateColorsFor.Add(newPolygon);
 									}
 									changeDescription = "Split polygon";
 								}
@@ -667,6 +676,11 @@ namespace Polygen.Tools
 					}
 					finally
 					{
+						foreach (var polygon in polygonsToUpdateColorsFor)
+						{
+							Image.UpdatePolygonPointColors(polygon);
+						}
+
 						if (changeDescription != "")
 							canvas.MadeChanges(changeDescription);
 					}

@@ -813,7 +813,25 @@ namespace Polygen.UI
 
 			if (points.Length > 2)
 			{
-				graphics.FillPolygon(new SolidBrush(polygon.Color), points);
+				if (image.Shading)
+				{
+					var path = new System.Drawing.Drawing2D.GraphicsPath();
+					path.AddPolygon(points);
+
+					var brush = new System.Drawing.Drawing2D.PathGradientBrush(points);
+					
+					brush.SurroundColors = polygon.Points.Select(p => (Color)p.Color).ToArray();
+
+					brush.CenterColor = 
+						//polygon.Color;
+						GraphicsUtils.BlendColors(brush.SurroundColors);
+
+					graphics.FillPath(brush, path);
+				}
+				else
+				{
+					graphics.FillPolygon(new SolidBrush(polygon.Color), points);
+				}
 
 				if (showPolygonOutlines)
 					graphics.DrawPolygon(Pens.Black, points);

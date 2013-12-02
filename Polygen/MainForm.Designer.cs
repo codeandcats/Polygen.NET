@@ -38,6 +38,8 @@
 			this.mnuFileSave = new System.Windows.Forms.ToolStripMenuItem();
 			this.mnuFileSaveAs = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
+			this.mnuFileExportImage = new System.Windows.Forms.ToolStripMenuItem();
+			this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripSeparator();
 			this.mnuFileClose = new System.Windows.Forms.ToolStripMenuItem();
 			this.mnuFileExit = new System.Windows.Forms.ToolStripMenuItem();
 			this.mnuEdit = new System.Windows.Forms.ToolStripMenuItem();
@@ -74,8 +76,7 @@
 			this.btnPolygonTool = new System.Windows.Forms.ToolStripButton();
 			this.btnEraseTool = new System.Windows.Forms.ToolStripButton();
 			this.canvas = new Polygen.UI.ImageCanvas();
-			this.mnuFileExportImage = new System.Windows.Forms.ToolStripMenuItem();
-			this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripSeparator();
+			this.mnuEditShadePolygons = new System.Windows.Forms.ToolStripMenuItem();
 			this.mnuMainMenu.SuspendLayout();
 			this.statusStrip1.SuspendLayout();
 			this.pnlTop.SuspendLayout();
@@ -118,7 +119,7 @@
 			// 
 			this.mnuFileNew.Name = "mnuFileNew";
 			this.mnuFileNew.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-			this.mnuFileNew.Size = new System.Drawing.Size(202, 30);
+			this.mnuFileNew.Size = new System.Drawing.Size(205, 30);
 			this.mnuFileNew.Text = "&New";
 			this.mnuFileNew.Click += new System.EventHandler(this.mnuFileNew_Click);
 			// 
@@ -133,19 +134,19 @@
 			// mnuFileOpenRecent
 			// 
 			this.mnuFileOpenRecent.Name = "mnuFileOpenRecent";
-			this.mnuFileOpenRecent.Size = new System.Drawing.Size(202, 30);
+			this.mnuFileOpenRecent.Size = new System.Drawing.Size(205, 30);
 			this.mnuFileOpenRecent.Text = "Open &Recent";
 			// 
 			// toolStripMenuItem1
 			// 
 			this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-			this.toolStripMenuItem1.Size = new System.Drawing.Size(199, 6);
+			this.toolStripMenuItem1.Size = new System.Drawing.Size(202, 6);
 			// 
 			// mnuFileSave
 			// 
 			this.mnuFileSave.Name = "mnuFileSave";
 			this.mnuFileSave.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-			this.mnuFileSave.Size = new System.Drawing.Size(202, 30);
+			this.mnuFileSave.Size = new System.Drawing.Size(205, 30);
 			this.mnuFileSave.Text = "&Save";
 			this.mnuFileSave.Click += new System.EventHandler(this.mnuFileSave_Click);
 			// 
@@ -159,13 +160,25 @@
 			// toolStripMenuItem2
 			// 
 			this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-			this.toolStripMenuItem2.Size = new System.Drawing.Size(199, 6);
+			this.toolStripMenuItem2.Size = new System.Drawing.Size(202, 6);
+			// 
+			// mnuFileExportImage
+			// 
+			this.mnuFileExportImage.Name = "mnuFileExportImage";
+			this.mnuFileExportImage.Size = new System.Drawing.Size(205, 30);
+			this.mnuFileExportImage.Text = "&Export Image...";
+			this.mnuFileExportImage.Click += new System.EventHandler(this.mnuFileExportImage_Click);
+			// 
+			// toolStripMenuItem6
+			// 
+			this.toolStripMenuItem6.Name = "toolStripMenuItem6";
+			this.toolStripMenuItem6.Size = new System.Drawing.Size(202, 6);
 			// 
 			// mnuFileClose
 			// 
 			this.mnuFileClose.Name = "mnuFileClose";
 			this.mnuFileClose.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-			this.mnuFileClose.Size = new System.Drawing.Size(202, 30);
+			this.mnuFileClose.Size = new System.Drawing.Size(205, 30);
 			this.mnuFileClose.Text = "&Close";
 			this.mnuFileClose.Click += new System.EventHandler(this.mnuFileClose_Click);
 			// 
@@ -173,7 +186,7 @@
 			// 
 			this.mnuFileExit.Name = "mnuFileExit";
 			this.mnuFileExit.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-			this.mnuFileExit.Size = new System.Drawing.Size(202, 30);
+			this.mnuFileExit.Size = new System.Drawing.Size(205, 30);
 			this.mnuFileExit.Text = "E&xit";
 			this.mnuFileExit.Click += new System.EventHandler(this.mnuFileExit_Click);
 			// 
@@ -185,6 +198,7 @@
             this.toolStripMenuItem3,
             this.mnuEditSnapToHandles,
             this.toolStripMenuItem4,
+            this.mnuEditShadePolygons,
             this.mnuUpdatePolygonColors,
             this.mnuEditClearAllPolygons,
             this.toolStripMenuItem5,
@@ -272,14 +286,6 @@
 			this.mnuViewShowOutlines.Size = new System.Drawing.Size(235, 30);
 			this.mnuViewShowOutlines.Text = "&Wireframe";
 			this.mnuViewShowOutlines.Click += new System.EventHandler(this.mnuViewShowOutlines_Click);
-			// 
-			// mnuViewCheckerboard
-			// 
-			this.mnuViewCheckerboard.Name = "mnuViewCheckerboard";
-			this.mnuViewCheckerboard.Size = new System.Drawing.Size(235, 30);
-			this.mnuViewCheckerboard.Text = "&Checkerboard";
-			this.mnuViewCheckerboard.Visible = false;
-			this.mnuViewCheckerboard.Click += new System.EventHandler(this.mnuViewCheckerboard_Click);
 			// 
 			// mnuViewFps
 			// 
@@ -509,17 +515,12 @@
 			this.canvas.ChangesMade += new Polygen.UI.ChangesMadeEvent(this.canvas_ChangesMade);
 			this.canvas.MouseMove += new System.Windows.Forms.MouseEventHandler(this.canvas_MouseMove);
 			// 
-			// mnuFileExportImage
+			// mnuEditShadePolygons
 			// 
-			this.mnuFileExportImage.Name = "mnuFileExportImage";
-			this.mnuFileExportImage.Size = new System.Drawing.Size(202, 30);
-			this.mnuFileExportImage.Text = "&Export Image...";
-			this.mnuFileExportImage.Click += new System.EventHandler(this.mnuFileExportImage_Click);
-			// 
-			// toolStripMenuItem6
-			// 
-			this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-			this.toolStripMenuItem6.Size = new System.Drawing.Size(199, 6);
+			this.mnuEditShadePolygons.Name = "mnuEditShadePolygons";
+			this.mnuEditShadePolygons.Size = new System.Drawing.Size(324, 30);
+			this.mnuEditShadePolygons.Text = "S&hade Polygons";
+			this.mnuEditShadePolygons.Click += new System.EventHandler(this.mnuEditShadePolygons_Click);
 			// 
 			// MainForm
 			// 
@@ -603,6 +604,7 @@
 		private System.Windows.Forms.ToolStripStatusLabel lblPolygonCount;
 		private System.Windows.Forms.ToolStripMenuItem mnuFileExportImage;
 		private System.Windows.Forms.ToolStripSeparator toolStripMenuItem6;
+		private System.Windows.Forms.ToolStripMenuItem mnuEditShadePolygons;
 	}
 }
 

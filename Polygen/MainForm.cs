@@ -143,6 +143,9 @@ namespace Polygen
 			mnuEditRedo.Enabled = canvas.CanRedo();
 			mnuEditRedo.Text = "&Redo " + canvas.GetRedoDescription();
 
+			mnuEditShadePolygons.Enabled = (ImageDef != null);
+			mnuEditShadePolygons.Checked = (ImageDef != null) && ImageDef.Shading;
+
 			mnuViewShowOutlines.Checked = canvas.ShowPolygonOutlines;
 			RefreshZoom();
 			txtImageOpacity.Value = canvas.ImageOpacity;
@@ -525,11 +528,6 @@ namespace Polygen
 			canvas.Invalidate();
 		}
 
-		private void mnuViewCheckerboard_Click(object sender, EventArgs e)
-		{
-			//
-		}
-
 		private void mnuClampPointsToImage_Click(object sender, EventArgs e)
 		{
 			var imageRect = new Rectangle(0, 0, ImageDef.Width, ImageDef.Height);
@@ -541,7 +539,8 @@ namespace Polygen
 					if (!imageRect.Contains(polygon.Points[pointIndex]))
 						polygon.Points[pointIndex] = new ColoredPoint(
 							Math.Min(Math.Max(0, polygon.Points[pointIndex].X), imageRect.Right),
-							Math.Min(Math.Max(0, polygon.Points[pointIndex].Y), imageRect.Bottom));
+							Math.Min(Math.Max(0, polygon.Points[pointIndex].Y), imageRect.Bottom),
+							polygon.Points[pointIndex].Color);
 				}
 			}
 
@@ -674,6 +673,16 @@ namespace Polygen
 				}
 			}
 			RefreshControlStates();
+		}
+
+		private void mnuEditShadePolygons_Click(object sender, EventArgs e)
+		{
+			if (ImageDef == null)
+				return;
+
+			ImageDef.Shading = !ImageDef.Shading;
+
+			canvas.MadeChanges(ImageDef.Shading ? "Enabled Shading" : "Disabled Shading");
 		}
 	}
 }
