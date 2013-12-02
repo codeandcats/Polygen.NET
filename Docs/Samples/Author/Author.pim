@@ -2,7 +2,7 @@
 <ImageDef xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Width>480</Width>
   <Height>640</Height>
-  <BaseFileName>C:\Users\Ben Daniel\Documents\Projects\Polygen\Docs\Samples\Author\Author.jpg</BaseFileName>
+  <BaseFileName>Author.jpg</BaseFileName>
   <Polygons>
     <Polygon>
       <Points>
@@ -7145,4 +7145,5 @@
       <Color>#55647A</Color>
     </Polygon>
   </Polygons>
+  <Shading>false</Shading>
 </ImageDef>

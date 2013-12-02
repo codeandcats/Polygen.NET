@@ -949,17 +949,17 @@
         <Point>
           <X>166</X>
           <Y>466</Y>
-          <Color>#4C433B</Color>
+          <Color>#4B4239</Color>
         </Point>
         <Point>
           <X>196</X>
           <Y>518</Y>
-          <Color>#4C433B</Color>
+          <Color>#4B4239</Color>
         </Point>
         <Point>
           <X>148</X>
           <Y>519</Y>
-          <Color>Black</Color>
+          <Color>#574E44</Color>
         </Point>
       </Points>
       <Color>#574E44</Color>
@@ -1089,17 +1089,17 @@
         <Point>
           <X>148</X>
           <Y>519</Y>
-          <Color>Black</Color>
+          <Color>#5F5246</Color>
         </Point>
         <Point>
           <X>196</X>
           <Y>518</Y>
-          <Color>#605447</Color>
+          <Color>#5F5246</Color>
         </Point>
         <Point>
           <X>215</X>
           <Y>561</Y>
-          <Color>#655648</Color>
+          <Color>#645547</Color>
         </Point>
       </Points>
       <Color>#645547</Color>
@@ -1109,17 +1109,17 @@
         <Point>
           <X>148</X>
           <Y>519</Y>
-          <Color>Black</Color>
+          <Color>#685B4D</Color>
         </Point>
         <Point>
           <X>215</X>
           <Y>561</Y>
-          <Color>#675A4C</Color>
+          <Color>#685B4D</Color>
         </Point>
         <Point>
           <X>152</X>
           <Y>590</Y>
-          <Color>#695C4F</Color>
+          <Color>#6B5E50</Color>
         </Point>
       </Points>
       <Color>#6B5E50</Color>
@@ -1249,7 +1249,7 @@
         <Point>
           <X>196</X>
           <Y>518</Y>
-          <Color>#7B6C60</Color>
+          <Color>#7B6B60</Color>
         </Point>
         <Point>
           <X>229</X>
@@ -1259,7 +1259,7 @@
         <Point>
           <X>215</X>
           <Y>561</Y>
-          <Color>#7A6A5F</Color>
+          <Color>#7A695F</Color>
         </Point>
       </Points>
       <Color>#85746B</Color>
@@ -2127,26 +2127,6 @@
     <Polygon>
       <Points>
         <Point>
-          <X>0</X>
-          <Y>234</Y>
-          <Color>#7A7F80</Color>
-        </Point>
-        <Point>
-          <X>148</X>
-          <Y>260</Y>
-          <Color>#727676</Color>
-        </Point>
-        <Point>
-          <X>116</X>
-          <Y>363</Y>
-          <Color>#727676</Color>
-        </Point>
-      </Points>
-      <Color>#7A7F80</Color>
-    </Polygon>
-    <Polygon>
-      <Points>
-        <Point>
           <X>77</X>
           <Y>149</Y>
           <Color>#7F8488</Color>
@@ -2154,12 +2134,12 @@
         <Point>
           <X>148</X>
           <Y>260</Y>
-          <Color>#7D8285</Color>
+          <Color>#7F8488</Color>
         </Point>
         <Point>
           <X>0</X>
           <Y>234</Y>
-          <Color>#7D8285</Color>
+          <Color>#7F8488</Color>
         </Point>
       </Points>
       <Color>#7F8488</Color>
@@ -2969,17 +2949,17 @@
         <Point>
           <X>166</X>
           <Y>466</Y>
-          <Color>#5A5751</Color>
+          <Color>#5B5751</Color>
         </Point>
         <Point>
           <X>148</X>
           <Y>519</Y>
-          <Color>Black</Color>
+          <Color>#57534C</Color>
         </Point>
         <Point>
           <X>103</X>
           <Y>514</Y>
-          <Color>#5A5854</Color>
+          <Color>#5B5A55</Color>
         </Point>
       </Points>
       <Color>#585650</Color>
@@ -3149,17 +3129,17 @@
         <Point>
           <X>103</X>
           <Y>514</Y>
-          <Color>#514E48</Color>
+          <Color>#514F49</Color>
         </Point>
         <Point>
           <X>148</X>
           <Y>519</Y>
-          <Color>Black</Color>
+          <Color>#5B554C</Color>
         </Point>
         <Point>
           <X>152</X>
           <Y>590</Y>
-          <Color>#575148</Color>
+          <Color>#585249</Color>
         </Point>
       </Points>
       <Color>#4F4C45</Color>
@@ -3189,12 +3169,12 @@
         <Point>
           <X>152</X>
           <Y>590</Y>
-          <Color>#716354</Color>
+          <Color>#726455</Color>
         </Point>
         <Point>
           <X>215</X>
           <Y>561</Y>
-          <Color>#746453</Color>
+          <Color>#756454</Color>
         </Point>
         <Point>
           <X>241</X>
@@ -3449,40 +3429,40 @@
         <Point>
           <X>446</X>
           <Y>710</Y>
-          <Color>#C6C5C4</Color>
+          <Color>#C6C6C4</Color>
         </Point>
         <Point>
           <X>593</X>
           <Y>644</Y>
-          <Color>#C6C5C4</Color>
+          <Color>#C6C6C4</Color>
         </Point>
         <Point>
-          <X>643</X>
-          <Y>831</Y>
-          <Color>#C5C5C5</Color>
+          <X>644</X>
+          <Y>853</Y>
+          <Color>#C6C6C6</Color>
         </Point>
       </Points>
-      <Color>#C5C5C5</Color>
+      <Color>#C6C6C6</Color>
     </Polygon>
     <Polygon>
       <Points>
         <Point>
           <X>446</X>
           <Y>710</Y>
-          <Color>#BEBBB7</Color>
+          <Color>#BEBCB8</Color>
         </Point>
         <Point>
-          <X>643</X>
-          <Y>831</Y>
-          <Color>#C4C3C1</Color>
+          <X>644</X>
+          <Y>853</Y>
+          <Color>#C4C4C2</Color>
         </Point>
         <Point>
           <X>424</X>
           <Y>853</Y>
-          <Color>#BEBBB5</Color>
+          <Color>#BEBBB6</Color>
         </Point>
       </Points>
-      <Color>#C4C3BF</Color>
+      <Color>#C4C3C0</Color>
     </Polygon>
     <Polygon>
       <Points>
@@ -3689,60 +3669,40 @@
         <Point>
           <X>593</X>
           <Y>644</Y>
-          <Color>#828181</Color>
-        </Point>
-        <Point>
-          <X>681</X>
-          <Y>749</Y>
-          <Color>#626161</Color>
-        </Point>
-        <Point>
-          <X>643</X>
-          <Y>831</Y>
           <Color>#848383</Color>
         </Point>
+        <Point>
+          <X>681</X>
+          <Y>749</Y>
+          <Color>#646363</Color>
+        </Point>
+        <Point>
+          <X>644</X>
+          <Y>853</Y>
+          <Color>#878686</Color>
+        </Point>
       </Points>
-      <Color>#646363</Color>
+      <Color>#686767</Color>
     </Polygon>
     <Polygon>
       <Points>
         <Point>
           <X>681</X>
           <Y>749</Y>
-          <Color>#5A5959</Color>
+          <Color>#605F5F</Color>
         </Point>
         <Point>
           <X>681</X>
           <Y>853</Y>
-          <Color>#565555</Color>
+          <Color>#5C5B5B</Color>
         </Point>
         <Point>
-          <X>643</X>
-          <Y>831</Y>
-          <Color>#5A5959</Color>
+          <X>644</X>
+          <Y>853</Y>
+          <Color>#605F5F</Color>
         </Point>
       </Points>
-      <Color>#565555</Color>
-    </Polygon>
-    <Polygon>
-      <Points>
-        <Point>
-          <X>643</X>
-          <Y>831</Y>
-          <Color>#9B9B99</Color>
-        </Point>
-        <Point>
-          <X>681</X>
-          <Y>853</Y>
-          <Color>#989897</Color>
-        </Point>
-        <Point>
-          <X>424</X>
-          <Y>853</Y>
-          <Color>#BCBDBB</Color>
-        </Point>
-      </Points>
-      <Color>#B9BAB9</Color>
+      <Color>#5C5B5B</Color>
     </Polygon>
     <Polygon>
       <Points>
@@ -3914,12 +3874,12 @@
         <Point>
           <X>169</X>
           <Y>31</Y>
-          <Color>#7F8588</Color>
+          <Color>#7D8285</Color>
         </Point>
         <Point>
           <X>77</X>
           <Y>149</Y>
-          <Color>#7E8488</Color>
+          <Color>#7C8184</Color>
         </Point>
       </Points>
       <Color>#7D8285</Color>
@@ -3969,7 +3929,7 @@
         <Point>
           <X>169</X>
           <Y>31</Y>
-          <Color>#888F93</Color>
+          <Color>#898F94</Color>
         </Point>
         <Point>
           <X>319</X>
@@ -3979,7 +3939,7 @@
         <Point>
           <X>281</X>
           <Y>112</Y>
-          <Color>#899195</Color>
+          <Color>#8A9195</Color>
         </Point>
       </Points>
       <Color>#878D91</Color>
@@ -4309,60 +4269,41 @@
         <Point>
           <X>169</X>
           <Y>31</Y>
-          <Color>Black</Color>
+          <Color>#83898C</Color>
         </Point>
         <Point>
           <X>281</X>
           <Y>112</Y>
-          <Color>Black</Color>
-        </Point>
-        <Point>
-          <X>204</X>
-          <Y>72</Y>
-          <Color>Black</Color>
-        </Point>
-      </Points>
-      <Color>#888F93</Color>
-    </Polygon>
-    <Polygon>
-      <Points>
-        <Point>
-          <X>204</X>
-          <Y>72</Y>
-          <Color>Black</Color>
-        </Point>
-        <Point>
-          <X>281</X>
-          <Y>112</Y>
-          <Color>Black</Color>
+          <Color>#858B8E</Color>
         </Point>
         <Point>
           <X>77</X>
           <Y>149</Y>
-          <Color>Black</Color>
+          <Color>#81878A</Color>
         </Point>
       </Points>
-      <Color>#868C90</Color>
+      <Color>#858C8F</Color>
     </Polygon>
     <Polygon>
       <Points>
         <Point>
-          <X>169</X>
-          <Y>31</Y>
-          <Color>Black</Color>
+          <X>0</X>
+          <Y>234</Y>
+          <Color>#7B8082</Color>
         </Point>
         <Point>
-          <X>204</X>
-          <Y>72</Y>
-          <Color>Black</Color>
+          <X>148</X>
+          <Y>260</Y>
+          <Color>#747778</Color>
         </Point>
         <Point>
-          <X>77</X>
-          <Y>149</Y>
-          <Color>Black</Color>
+          <X>116</X>
+          <Y>363</Y>
+          <Color>#727576</Color>
         </Point>
       </Points>
-      <Color>#848A8D</Color>
+      <Color>#7A7F80</Color>
     </Polygon>
   </Polygons>
+  <Shading>true</Shading>
 </ImageDef>
